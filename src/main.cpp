@@ -12,23 +12,24 @@ const int photo1 = 1;
 
 //calibrate when phototransistors are unlit to get full scale value
 double sensitivity = 1.0;
-int ref0, ref1;
+int threshold0, threshold1;
 unsigned long initialTime;
-bool timing;
+bool timing = false;
+bool timeRecorded = false;
 
 const int length = 3;
 float times[length];
 
 void resetSensitivity(){
-  ref0 = analogRead(photo0);
-  ref1 = analogRead(photo1);
-  Serial.print("sensitivity reset, ref0: ");
-  Serial.print(ref0);
-  Serial.print(", ref1: ");
-  Serial.println(ref1);
+  threshold0 = (int)((0.5/sensitivity) * analogRead(photo0));
+  threshold1 = (int)((0.5/sensitivity) * analogRead(photo1));
+  Serial.print("sensitivity reset, threshold0: ");
+  Serial.print(threshold0);
+  Serial.print(", threshold1: ");
+  Serial.println(threshold1);
 
-  // lcd.clear();
-  // lcd.println("Sensitivity reset");
+  lcd.setCursor(7, 1);
+  lcd.print("Sens rst.");
 }
 
 float* updateTimes(float* array, float newTime){
@@ -69,8 +70,8 @@ void setup() {
   lcd.begin(16, 2);
   lcd.print("Photogate");
 
-  ref0 = analogRead(photo0);
-  ref1 = analogRead(photo1);
+  threshold0 = (int)((0.5/sensitivity) * analogRead(photo0));
+  threshold1 = (int)((0.5/sensitivity) * analogRead(photo1));
 
   right.pressFunction(resetSensitivity);
 }
@@ -85,7 +86,7 @@ void loop() {
   // Serial.println(analogRead(photo1)*5/1024.0);
 
 
-  if(!timing && (analogRead(photo0) > (0.5/sensitivity) * ref0)){
+  if(!timing && (analogRead(photo0) > threshold0)){
     timing = true;
     initialTime = micros();
     Serial.println("Timing...");
@@ -95,13 +96,18 @@ void loop() {
   }
 
   if(timing){
-    if(analogRead(photo1) > (0.5/sensitivity) * ref1){
 
+    if(!timeRecorded && (analogRead(photo1) > threshold1)){
+      Serial.println("timed");
       updateTimes(times, (micros() - initialTime)/1000000.0);
       updateLCD();
-      timing = false;
+      timeRecorded = true;
+    }
 
-      while(analogRead(photo1) > (0.5/sensitivity) * ref1) delay(1);
+    if(timeRecorded && (analogRead(photo1) < threshold1)){
+      timing = false;
+      timeRecorded = false;
+      Serial.println("booleans reset");
     }
   }
 
