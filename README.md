@@ -56,7 +56,7 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 10. Place the nut into the 3D print, and screw the eye bolt in. You can optionally glue the nut in place, but I chose not to just so I can remove it later if necessary.
 
 The finshed result should look something like this:
-![Laser Assembly](photos\LaserAssembly.jpg)
+![Laser Assembly](photos/LaserAssembly.jpg)
 
 ### Phototransistors
 
@@ -85,7 +85,7 @@ The finshed result should look something like this:
 12. Glue the 3D printed cylinder to the mount, making sure that it sits perpendicular to the front face of the mount and doesn't interfere with the path of light.
 
 The finshed result should look something like this:
-![Phototransistor Assembly](photos\PhototransistorAssembly.jpg)
+![Phototransistor Assembly](photos/PhototransistorAssembly.jpg)
 ![Phototransistor Closeup](photos\PhototransistorCloseup.jpg)
 
 ### Shield
