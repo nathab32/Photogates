@@ -86,7 +86,7 @@ The finshed result should look something like this:
 
 The finshed result should look something like this:
 ![Phototransistor Assembly](photos/PhototransistorAssembly.jpg)
-![Phototransistor Closeup](photos\PhototransistorCloseup.jpg)
+![Phototransistor Closeup](photos/PhototransistorCloseup.jpg)
 
 ### Shield
 
