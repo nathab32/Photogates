@@ -9,8 +9,8 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 ## Features
 
 - Based on the Arduino UNO R3
-- Swappable lasers and sensors
-- Lasers and sensors mount to standard lab stands
+- Swappable lasers and phototransistors
+- Lasers and phototransistors mount to standard lab stands
 - Displays last 3 recorded times
 - Adjustable sensitivity
 - Easy assembly
@@ -56,7 +56,7 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 10. Place the nut into the 3D print, and screw the eye bolt in. You can optionally glue the nut in place, but I chose not to just so I can remove it later if necessary.
 
 The finshed result should look something like this:
-[insert image here]
+![Laser Assembly](photos\LaserAssembly.jpg)
 
 ### Phototransistors
 
@@ -80,12 +80,27 @@ The finshed result should look something like this:
 
 10. Place the nut into the 3D print, and screw the eye bolt in. You can optionally glue the nut in place, but I chose not to just so I can remove it later if necessary.
 
+11. With a small strip of black electrical tape, cover the back side of the phototransistor to stop ambient light from hitting the sensor.
+
+12. Glue the 3D printed cylinder to the mount, making sure that it sits perpendicular to the front face of the mount and doesn't interfere with the path of light.
+
 The finshed result should look something like this:
-[insert image here]
+![Phototransistor Assembly](photos\PhototransistorAssembly.jpg)
+![Phototransistor Closeup](photos\PhototransistorCloseup.jpg)
 
 ### Shield
 
+1. Using the included kicad schematic and pcb files, solder the components to their respective places on the PCB.
+
 ### Final Assembly
+
+1. Screw the Arduino UNO R3 onto the bottom plate with 4x M3x6 screws.
+
+2. Firmly push the shield onto the top of the UNO, making sure that all header pins line up.
+
+3. Place the top cover over the shield, and firmly push down until the cover snaps into place.
+
+4. Glue the lettering into place.
 
 ## BOM
 
