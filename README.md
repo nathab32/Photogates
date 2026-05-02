@@ -4,7 +4,9 @@
 
 Photogates allow precise, automatic timing of objects moving between two points. The photogates trigger automatically when a laser beam is interrupted, providing much faster response times than a human ever could with a stopwatch.
 
-This specific project was inspired by my Science Olympiad team's lack of a photogate for the timing events. Commonly available solutions online cost at least $50, with high resolution ones costing hundreds of dollars. This design seeks to lower the barrier to precise timing by using commonly available parts and 3D printed materials for a cost-effective design.
+This specific project was inspired by my Science Olympiad team's lack of a photogate for the timing events. Commonly available solutions online cost at least $50, with high resolution ones costing hundreds of dollars. This design seeks to lower the barrier to precise timing by using commonly available parts and 3D printed materials for a cost-effective design. The design is fully open source to allow others to replicate and improve on it.
+
+![Main Module Assembly](photos/CAD/MainModule.png)
 
 ## Features
 
@@ -13,6 +15,7 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 - Lasers and phototransistors mount to standard lab stands
 - Displays last 3 recorded times
 - Adjustable sensitivity
+- Fully THT design
 - Easy assembly
 
 ## Basic Usage
@@ -21,7 +24,7 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 
 2. Position the two phototransistors directly across from the two lasers. Each laser should hit straight onto a phototransistor.
 
-3. Plug the lasers into the right side of the main module, and the phototransistors into the left side. Both the lasers and phototransistors have polarities, and will not function if plugged in wrong.
+3. Plug the lasers into the right side of the main module, and the phototransistors into the left side. The polarities are indicated on the silkscreen: a `+` for the lasers, and a `-` for the phototransistors.
 
 4. Before powering up the module, cover both lasers so that calibration can occur. Alternatively, plug the module in first, cover the lasers, and then press `R` to calibrate.
 
@@ -31,6 +34,19 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 6. If everything has been executed correctly, then your photogate should be ready for timing! If you need to recalibrate at any point, simply interrput both beams and press `R` again.
 
 ## Assembly
+
+### 3D Printing
+
+All 3D printing related files are included in the [`3D_Printing`](3D_Printing) directory. This includes the original `.f3d`, `.step`, and `.3mf` files.
+
+If you don't use the `.3mf` file to slice, below are the parameters that I used.
+
+|Parameter|Value|
+|---------|-----|
+|Material|PLA|
+|Layer Height|0.2mm|
+|Nozzle|0.4mm|
+|Infill|<20%|
 
 ### Lasers
 
@@ -90,7 +106,7 @@ The finshed result should look something like this:
 
 ### Shield
 
-1. Using the included kicad schematic and pcb files, solder the components to their respective places on the PCB.
+Using the included KiCad schematic and pcb files, solder the components to their respective places on the PCB. Alternatively, you can also see the schematics and PCB in [`photos/Circuit`](photos/Circuit).
 
 ### Final Assembly
 
@@ -102,11 +118,19 @@ The finshed result should look something like this:
 
 4. Glue the lettering into place.
 
+5. Upload the code by cloning this repository and using PlatformIO
+
+6. Test that everything works by going to [Basic Usage](#basic-usage)
+
 ## BOM
+
+The BOM can be viewed in [`BOM.csv`](BOM.csv)
 
 ## Todo
 
+- Add images of fusion render to readme after finalizing assembly
 - distance input for avg speed
 - switch phototransistor 0 and 1 (automatically?)
 - single laser mode
 - Output data to serial
+- New board: control laser on/off with arduino
