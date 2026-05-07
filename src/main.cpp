@@ -3,6 +3,8 @@
 #include <Wire.h>
 #include <Button.h>
 
+#define version "v0.1"
+
 Button right(6, 50, 1000);
 Button left(7, 50, 1000);
 
@@ -69,7 +71,9 @@ void setup() {
   Serial.begin(115200);
   lcd.begin(16, 2);
   lcd.print("Photogate");
-
+  lcd.setCursor(0, 1);
+  lcd.print(version);
+  delay(1000);
   threshold0 = (int)((0.5/sensitivity) * analogRead(photo0));
   threshold1 = (int)((0.5/sensitivity) * analogRead(photo1));
 
@@ -107,7 +111,6 @@ void loop() {
     if(timeRecorded && (analogRead(photo1) < threshold1)){
       timing = false;
       timeRecorded = false;
-      Serial.println("booleans reset");
     }
   }
 
