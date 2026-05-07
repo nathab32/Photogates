@@ -7,6 +7,7 @@ Photogates allow precise, automatic timing of objects moving between two points.
 This specific project was inspired by my Science Olympiad team's lack of a photogate for the timing events. Commonly available solutions online cost at least $50, with high resolution ones costing hundreds of dollars. This design seeks to lower the barrier to precise timing by using commonly available parts and 3D printed materials for a cost-effective design. The design is fully open source to allow others to replicate and improve on it.
 
 ![Main Module Assembly](photos/CAD/MainModule.png)
+![CAD Render](photos/CAD/AssemblyRender.PNG)
 
 ## Features
 
@@ -67,7 +68,7 @@ If you don't use the `.3mf` file to slice, below are the parameters that I used.
 
 8. If laser powers on, then use the heat shrink over the flat portion of the laser's PCB. Don't slide it over the metal cylindrical section, otherwise the laser won't fit into the 3D printed mount.
 
-9. Slide the laser diode into the 3D print, and use the M3 set screw to hold it in place.
+9. Slide the laser diode into the 3D print, and use a M3x10 set screw to hold it in place.
 
 10. Place the nut into the 3D print, and screw the eye bolt in. You can optionally glue the nut in place, but I chose not to just so I can remove it later if necessary.
 
@@ -106,7 +107,7 @@ The finshed result should look something like this:
 
 ### Shield
 
-Using the included KiCad schematic and pcb files, solder the components to their respective places on the PCB. Alternatively, you can also see the schematics and PCB in [`photos/Circuit`](photos/Circuit).
+Using the included KiCad schematic and pcb files, solder the components to their respective places on the PCB. Everything is throughhole and can be soldered by hand, but be especially careful while soldering the transistors since the pitch is quite small. The schematics and PCB can also be viewed in [`photos/Circuit`](photos/Circuit).
 
 ### Final Assembly
 
