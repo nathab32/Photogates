@@ -1,4 +1,6 @@
-# Photogates
+# Photogate
+
+![Magazine](photos/magazine.png)
 
 ## Description
 
@@ -48,6 +50,8 @@ If you don't use the `.3mf` file to slice, below are the parameters that I used.
 |Layer Height|0.2mm|
 |Nozzle|0.4mm|
 |Infill|<20%|
+
+The biggest issue I had was with printing the lettering due to some elephant's foot, but if you have a multicolor printer then this won't be an issue. Otherwise, you may need to play around with the letter offsets and/or printer settings to get the letters to fit. The lettering is also entirely visual, so you can skip it if you want. 
 
 ### Lasers
 
@@ -117,11 +121,15 @@ Using the included KiCad schematic and pcb files, solder the components to their
 
 3. Place the top cover over the shield, and firmly push down until the cover snaps into place.
 
-4. Glue the lettering into place.
+4. Glue the lettering and buttons into place.
+   - Make sure not to test the fit for the buttons (with the cover on as well) before gluing. When gluing, make sure not to put too much that it clogs up the button.
 
-5. Upload the code by cloning this repository and using PlatformIO
+5. Upload the code by cloning this repository and opening PlatformIO file.
 
 6. Test that everything works by going to [Basic Usage](#basic-usage)
+
+![All parts before final assembly](photos/FinalAssembly1.jpeg)
+![Final assembly](photos/FinalAssembly2.jpeg)
 
 ## BOM
 
@@ -129,7 +137,6 @@ The BOM can be viewed in [`BOM.csv`](BOM.csv)
 
 ## Todo
 
-- Add images of fusion render to readme after finalizing assembly
 - distance input for avg speed
 - switch phototransistor 0 and 1 (automatically?)
 - single laser mode
