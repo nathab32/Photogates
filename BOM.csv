@@ -1,28 +1,31 @@
-Electronics,,,,,,,,,Mechanical,,,,,,
-#,Qty,Reference,Value,Description,Link,Price/unit,Total Price,,#,Qty,Item,Link,Price/unit,Total Price,
-1,1,A1,Arduino_UNO_R3,Arduino UNO R3,https://a.co/d/0gtx5tss, $7.99 , $7.99 ,,1,4,M3x6 screw,https://a.co/d/0aZcBFy4, $0.01 , $0.05 ,
-2,1,C1,1u,Ceramic capacitor,https://a.co/d/00MB8bSj, $0.02 , $0.02 ,,2,2,M3x10 screw,https://a.co/d/0aZcBFy5, $0.01 , $0.02 ,
-3,4,"C2,C3,C4,C5",0.1u,Ceramic capacitor,https://a.co/d/00MB8bSj, $0.02 , $0.09 ,,3,4,M2x4 screw,https://a.co/d/0aZcBFy6, $0.01 , $0.05 ,
-4,1,DS1,WC1602A,"LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD",https://a.co/d/0a6xKTI6, $5.00 , $5.00 ,,4,2,"1/4x2"" Eye Bolt w/ Nut, 2 pack",https://www.homedepot.com/p/Everbilt-1-4-in-20-x-2-in-Zinc-Eye-Bolt-2-Pack-824301/314745414, $1.57 , $3.14 ,
-5,1,J1,Arduino_Digital_0_7,01x08 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru, $0.08 , $0.08 ,,5,2,Laser Mount,"See attached .f3d, .step, or .3mf file", $0.17 , $0.34 ,
-6,1,J2,Arduino_Digital_8_13,01x10 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,6,2,Phototransistor Mount,"See attached .f3d, .step, or .3mf file", $0.17 , $0.34 ,
-7,1,J3,Arduino_Power,01x08 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,7,2,Light Cover,"See attached .f3d, .step, or .3mf file", $0.02 , $0.04 ,
-8,1,J4,Arduino_Analog_IN,01x06 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,8,1,Bottom Case,"See attached .f3d, .step, or .3mf file", $0.36 , $0.36 ,
-9,4,"J5,J6,J7,J8",Conn_01x02_Pin,01x02 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,9,1,Top Case,"See attached .f3d, .step, or .3mf file", $0.47 , $0.47 ,
-10,2,"LD1,LD2",LASER-650NM,5mW Laser Diode,https://a.co/d/0iFaSl0f, $0.68 , $1.36 ,,10,1,Buttons,"See attached .f3d, .step, or .3mf file", $0.01 , $0.01 ,
-11,2,"Q1,Q2",PT928-6C-F,"NPN phototransistor, collector/emitter",https://www.digikey.com/short/hrb7dw75, $0.37 , $0.74 ,,11,1,Text,"See attached .f3d, .step, or .3mf file", $0.01 , $0.01 ,
-12,2,"Q3,Q4",2N3904,"0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92",https://a.co/d/05KZVKDI, $0.04 , $0.08 ,,,,,,, $4.82 ,
-13,1,R1,220,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb, $0.02 , $0.02 ,,,,,,,,
-14,2,"R2,R3",100k,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb, $0.02 , $0.03 ,,,,,,,,
-15,4,"R4,R5,R7,R8",1k,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb, $0.02 , $0.06 ,,,,,,,,
-16,2,"R6,R9",100,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb, $0.02 , $0.03 ,,,,,,,,
-17,1,RV1,10k,Potentiometer,https://www.digikey.com/short/5dwzm9ph, $3.34 , $3.34 ,,,,,,,,
-18,3,"U1,U2,U3",SPST-NO Switch,6mm x 6mm Tactile Switch,https://www.digikey.com/short/5j295w20 (or Amazon), $0.13 , $0.39 ,,,,,,,,
-19,1,N/A,N/A,"Stranded twisted pair, 24AWG",https://a.co/d/0jb6LYgm, $3.19 , $3.19 ,,,,,,,,
-20,4,N/A,N/A,Female to Female dupont wires for soldering,https://a.co/d/081eLbjy, $0.06 , $0.23 ,,,,,,,,
-21,1,N/A,N/A,PCB,See attached KiCad/Gerbers, $2.00 , $2.00 ,,,,,,,,
-,,,,,,, $22.64 ,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,
-,,,,,, Subtotal: , $27.47 ,,,,,,,,
-,,,,,,,"+shipping, tax, etc.",,,,,,,,
+Electronics,,,,,,,,,Mechanical,,,,,
+#,Qty,Reference,Value,Description,Link,Price/unit,Total Price,,#,Qty,Item,Link,Price/unit,Total Price
+1,1,A1,Arduino_UNO_R3,Arduino UNO R3,https://a.co/d/0gtx5tss,$7.99 ,$7.99 ,,1,4,M3x6 screw,https://a.co/d/0aZcBFy4,$0.01 ,$0.05 
+2,1,C1,1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.02 ,,2,2,M3x10 screw,https://a.co/d/0aZcBFy5,$0.01 ,$0.02 
+3,4,"C2,C3,C4,C5",0.1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.09 ,,3,4,M2x4 screw,https://a.co/d/0aZcBFy6,$0.01 ,$0.05 
+4,1,DS1,WC1602A,"LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD",https://a.co/d/0a6xKTI6,$5.00 ,$5.00 ,,4,2,"1/4x2"" Eye Bolt w/ Nut, 2 pack",https://www.homedepot.com/p/Everbilt-1-4-in-20-x-2-in-Zinc-Eye-Bolt-2-Pack-824301/314745414,$1.57 ,$3.14 
+5,1,J1,Arduino_Digital_0_7,01x08 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,$0.08 ,$0.08 ,,5,2,Laser Mount,"See attached .f3d, .step, or .3mf file",$0.17 ,$0.34 
+6,1,J2,Arduino_Digital_8_13,01x10 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,6,2,Phototransistor Mount,"See attached .f3d, .step, or .3mf file",$0.17 ,$0.34 
+7,1,J3,Arduino_Power,01x08 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,7,2,Light Cover,"See attached .f3d, .step, or .3mf file",$0.02 ,$0.04 
+8,1,J4,Arduino_Analog_IN,01x06 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,8,1,Bottom Case,"See attached .f3d, .step, or .3mf file",$0.36 ,$0.36 
+9,4,"J5,J6,J7,J8",Conn_01x02_Pin,01x02 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,9,1,Top Case,"See attached .f3d, .step, or .3mf file",$0.47 ,$0.47 
+10,2,"LD1,LD2",LASER-650NM,5mW Laser Diode,https://a.co/d/0iFaSl0f,$0.68 ,$1.36 ,,10,1,Buttons,"See attached .f3d, .step, or .3mf file",$0.01 ,$0.01 
+11,2,"Q1,Q2",PT928-6C-F,"NPN phototransistor, collector/emitter",https://www.digikey.com/short/hrb7dw75,$0.37 ,$0.74 ,,11,1,Text,"See attached .f3d, .step, or .3mf file",$0.01 ,$0.01 
+12,2,"Q3,Q4",2N3904,"0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92",https://a.co/d/05KZVKDI,$0.04 ,$0.08 ,,,,,,,$4.82 
+13,1,R1,220,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.02 ,,,,,,,
+14,2,"R2,R3",100k,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.03 ,,,,,,,
+15,4,"R4,R5,R7,R8",1k,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.06 ,,,,,,,
+16,2,"R6,R9",100,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.03 ,,,,,,,
+17,1,RV1,10k,Potentiometer,https://www.digikey.com/short/5dwzm9ph,$3.34 ,$3.34 ,,,,,,,
+18,3,"U1,U2,U3",SPST-NO Switch,6mm x 6mm Tactile Switch,https://www.digikey.com/short/5j295w20 (or Amazon),$0.13 ,$0.39 ,,,,,,,
+19,1,N/A,N/A,"Stranded twisted pair, 24AWG",https://a.co/d/0jb6LYgm,$3.19 ,$3.19 ,,,,,,,
+20,4,N/A,N/A,Female to Female dupont wires for soldering,https://a.co/d/081eLbjy,$0.06 ,$0.23 ,,,,,,,
+21,1,N/A,N/A,PCB,See attached KiCad/Gerbers,$2.00 ,$2.00 ,,,,,,,
+,,,,,,,$22.64 ,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,, Subtotal: ,$27.47 ,,,,,,,
+,,,,,,Shipping:, $5.00 ,,,,,,,
+,,,,,,PCB:, $5.00 ,,,,,,,
+,,,,,,Tax:, $1.87 ,,,,,,,
+,,,,,,Total:,$39.34 ,,,,,,,
