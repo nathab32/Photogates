@@ -51,7 +51,7 @@ If you don't use the `.3mf` file to slice, below are the parameters that I used.
 |Nozzle|0.4mm|
 |Infill|<20%|
 
-The biggest issue I had was with printing the lettering due to some elephant's foot, but if you have a multicolor printer then this won't be an issue. Otherwise, you may need to play around with the letter offsets and/or printer settings to get the letters to fit. The lettering is also entirely visual, so you can skip it if you want. 
+The biggest issue I had was with printing the lettering due to some elephant's foot, but if you have a multicolor printer then this won't be an issue. Otherwise, you may need to play around with the letter offsets and/or printer settings to get the letters to fit. The lettering is also entirely visual, so you can skip it if you want.
 
 ### Lasers
 
