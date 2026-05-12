@@ -126,7 +126,7 @@ The finshed result should look something like this:
 4. Glue the lettering and buttons into place.
    - Make sure not to test the fit for the buttons (with the cover on as well) before gluing. When gluing, make sure not to put too much that it clogs up the button.
 
-5. Upload the code by cloning this repository and opening PlatformIO file.
+5. Upload the code by cloning this repository and opening the folder in PlatformIO. Simply plug in the Arduino to your computer, go to [main.cpp](src/main.cpp), and hit the arrow in the top right corner (Ctrl+Alt+U) and wait for the success message.
 
 6. Test that everything works by going to [Basic Usage](#basic-usage)
 
