@@ -111,7 +111,9 @@ The finshed result should look something like this:
 
 ### Shield
 
-Using the included KiCad schematic and pcb files, solder the components to their respective places on the PCB. Everything is throughhole and can be soldered by hand, but be especially careful while soldering the transistors since the pitch is quite small. The schematics and PCB can also be viewed in [`photos/Circuit`](photos/Circuit).
+1. Order a PCB from your desired PCB manufacturer (I used JLCPCB) with the included [Gerbers](PCB/Gerber.zip). Refer to the following image for the ordering info: ![PCB Ordering](photos/Circuit/PCB_Info.png)
+
+2. Using the included [KiCad project](PCB/KiCad.zip), solder the components to their respective places on the PCB. Everything is throughhole and can be soldered by hand, but be especially careful while soldering the transistors since the pitch is quite small. The schematics and PCB can also be viewed in [`photos/Circuit`](photos/Circuit).
 
 ### Final Assembly
 
