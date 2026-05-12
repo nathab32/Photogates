@@ -1,8 +1,8 @@
 Electronics,,,,,,,,,Mechanical,,,,,
 #,Qty,Reference,Value,Description,Link,Price/unit,Total Price,,#,Qty,Item,Link,Price/unit,Total Price
 1,1,A1,Arduino_UNO_R3,Arduino UNO R3,https://a.co/d/0gtx5tss,$7.99 ,$7.99 ,,1,4,M3x6 screw,https://a.co/d/0aZcBFy4,$0.01 ,$0.05 
-2,1,C1,1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.02 ,,2,2,M3x10 screw,https://a.co/d/0aZcBFy5,$0.01 ,$0.02 
-3,4,"C2,C3,C4,C5",0.1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.09 ,,3,4,M2x4 screw,https://a.co/d/0aZcBFy6,$0.01 ,$0.05 
+2,1,C1,1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.02 ,,2,2,M3x10 screw,https://a.co/d/0aZcBFy4,$0.01 ,$0.02 
+3,4,"C2,C3,C4,C5",0.1u,Ceramic capacitor,https://a.co/d/00MB8bSj,$0.02 ,$0.09 ,,3,4,M2x4 screw,https://a.co/d/0aZcBFy4,$0.01 ,$0.05 
 4,1,DS1,WC1602A,"LCD 16x2 Alphanumeric , 8 bit parallel bus, 5V VDD",https://a.co/d/0a6xKTI6,$5.00 ,$5.00 ,,4,2,"1/4x2"" Eye Bolt w/ Nut, 2 pack",https://www.homedepot.com/p/Everbilt-1-4-in-20-x-2-in-Zinc-Eye-Bolt-2-Pack-824301/314745414,$1.57 ,$3.14 
 5,1,J1,Arduino_Digital_0_7,01x08 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,$0.08 ,$0.08 ,,5,2,Laser Mount,"See attached .f3d, .step, or .3mf file",$0.17 ,$0.34 
 6,1,J2,Arduino_Digital_8_13,01x10 2.54mm Pin Headers,https://a.co/d/0f7wE6Ru,, $-   ,,6,2,Phototransistor Mount,"See attached .f3d, .step, or .3mf file",$0.17 ,$0.34 
@@ -17,7 +17,7 @@ Electronics,,,,,,,,,Mechanical,,,,,
 15,4,"R4,R5,R7,R8",1k,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.06 ,,,,,,,
 16,2,"R6,R9",100,1/4W 1% Metal Film Resistor,https://a.co/d/0gNADgIb,$0.02 ,$0.03 ,,,,,,,
 17,1,RV1,10k,Potentiometer,https://www.digikey.com/short/5dwzm9ph,$3.34 ,$3.34 ,,,,,,,
-18,3,"U1,U2,U3",SPST-NO Switch,6mm x 6mm Tactile Switch,https://www.digikey.com/short/5j295w20 (or Amazon),$0.13 ,$0.39 ,,,,,,,
+18,3,"U1,U2,U3",SPST-NO Switch,6mm x 6mm Tactile Switch,https://www.digikey.com/short/5j295w20,$0.13 ,$0.39 ,,,,,,,
 19,1,N/A,N/A,"Stranded twisted pair, 24AWG",https://a.co/d/0jb6LYgm,$3.19 ,$3.19 ,,,,,,,
 20,4,N/A,N/A,Female to Female dupont wires for soldering,https://a.co/d/081eLbjy,$0.06 ,$0.23 ,,,,,,,
 21,1,N/A,N/A,PCB,See attached KiCad/Gerbers,$2.00 ,$2.00 ,,,,,,,
@@ -25,7 +25,7 @@ Electronics,,,,,,,,,Mechanical,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,
 ,,,,,, Subtotal: ,$27.47 ,,,,,,,
-,,,,,,Shipping:, $5.00 ,,,,,,,
-,,,,,,PCB:, $5.00 ,,,,,,,
-,,,,,,Tax:, $1.87 ,,,,,,,
+,,,,,,Shipping:,$5.00 ,,,,,,,
+,,,,,,PCB:,$5.00 ,,,,,,,
+,,,,,,Tax:,$1.87 ,,,,,,,
 ,,,,,,Total:,$39.34 ,,,,,,,
