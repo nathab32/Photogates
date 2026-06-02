@@ -23,8 +23,8 @@ const int length = 3;
 float times[length];
 
 void resetSensitivity(){
-  threshold0 = (int)((0.5/sensitivity) * analogRead(photo0));
-  threshold1 = (int)((0.5/sensitivity) * analogRead(photo1));
+  threshold0 = (int)((20/sensitivity) + analogRead(photo0));
+  threshold1 = (int)((20/sensitivity) + analogRead(photo1));
   Serial.print("sensitivity reset, threshold0: ");
   Serial.print(threshold0);
   Serial.print(", threshold1: ");
