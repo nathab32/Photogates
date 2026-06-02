@@ -29,12 +29,12 @@ This specific project was inspired by my Science Olympiad team's lack of a photo
 
 3. Plug the lasers into the right side of the main module, and the phototransistors into the left side. The polarities are indicated on the silkscreen: a `+` for the lasers, and a `-` for the phototransistors.
 
-4. Before powering up the module, cover both lasers so that calibration can occur. Alternatively, plug the module in first, cover the lasers, and then press `R` to calibrate.
+4. When the module first powers on, calibration of the phototransistors will occur. The laser beams should be shining onto the phototransistors when this first occurs.
 
 5. After calibration, make sure that the phototransistors are functioning by each beam independently. One of the interruptions should start the timing, indicated by `Timing...` on the LCD. The other interruption should stop the timing.
    - This is a good time to check the order of the phototransistors. If the order is incorrect, then simply plug the phototransistor in the top slot into the bottom slot and vice versa.
 
-6. If everything has been executed correctly, then your photogate should be ready for timing! If you need to recalibrate at any point, simply interrput both beams and press `R` again.
+6. If everything has been executed correctly, then your photogate should be ready for timing! If you need to recalibrate at any point, simply press `R` again.
 
 ## Assembly
 
