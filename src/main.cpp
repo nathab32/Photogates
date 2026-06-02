@@ -13,7 +13,7 @@ const int photo0 = 0;
 const int photo1 = 1;
 
 //calibrate when phototransistors are unlit to get full scale value
-double sensitivity = 1.0;
+double sensitivity = 10.0;
 int threshold0, threshold1;
 unsigned long initialTime;
 bool timing = false;
@@ -74,8 +74,14 @@ void setup() {
   lcd.setCursor(0, 1);
   lcd.print(version);
   delay(1000);
-  threshold0 = (int)((0.5/sensitivity) * analogRead(photo0));
-  threshold1 = (int)((0.5/sensitivity) * analogRead(photo1));
+  lcd.clear();
+  lcd.print("Calibrating...");
+  delay(1000);
+  threshold0 = (int)((20/sensitivity) + analogRead(photo0));
+  threshold1 = (int)((20/sensitivity) + analogRead(photo1));
+
+  lcd.clear();
+  updateLCD();
 
   right.pressFunction(resetSensitivity);
 }
@@ -83,12 +89,16 @@ void setup() {
 void loop() {
   right.handle();
 
-  // Serial.print(">base:0, peak:5");
-  // Serial.print(",photo0: ");
-  // Serial.print(analogRead(photo0)*5/1024.0);
-  // Serial.print(",photo1: ");
-  // Serial.println(analogRead(photo1)*5/1024.0);
-
+  // Serial.println(">base:0");
+  // Serial.println(">peak:5");
+  Serial.print(">photo0: ");
+  Serial.println(analogRead(photo0));
+  Serial.print(">photo1: ");
+  Serial.println(analogRead(photo1));
+  Serial.print(">threshold0: ");
+  Serial.println(threshold0);
+  Serial.print(">threshold1: ");
+  Serial.println(threshold1);
 
   if(!timing && (analogRead(photo0) > threshold0)){
     timing = true;
