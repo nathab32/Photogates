@@ -1,6 +1,7 @@
 # Photogate
 
 ![Magazine](photos/magazine.png)
+[Video Demo](https://www.youtube.com/watch?v=dZhynI2hOx8)
 
 ## Description
 
